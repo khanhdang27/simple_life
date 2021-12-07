@@ -1,0 +1,39 @@
+@import "../../backend/css/main_seting";
+
+#fullcalendar {
+  max-height: 800px;
+}
+
+button.fc-button {
+  text-transform: capitalize !important;
+}
+
+.fc {
+  button {
+    background-color: $main-color !important;
+    border-color: $main-color !important;
+
+    &:focus {
+      box-shadow: inherit !important;
+    }
+
+    &.fc-button-active {
+      background-color: $main-fade-color !important;
+      border-color: $main-fade-color !important;
+    }
+  }
+}
+
+.fc-scrollgrid {
+  thead {
+    background-color: #ffccc87a;
+
+    .fc-col-header {
+      tbody {
+        th {
+          padding: 20px 0;
+        }
+      }
+    }
+  }
+}

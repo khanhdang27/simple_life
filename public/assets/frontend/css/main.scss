@@ -1,0 +1,101 @@
+.form-group {
+    label {
+        font-weight: 600;
+    }
+
+    .custom-file-input {
+        cursor: pointer;
+    }
+
+    .custom-file-label {
+        border: inherit;
+        border-bottom: 1px solid #c1c1c1;
+        font-weight: inherit;
+    }
+
+    /** Validation **/
+    .help-block {
+        &.error-help-block {
+            color: red;
+        }
+    }
+
+    &.has-success {
+        label {
+            color: #2ebb00;
+        }
+        .form-control{
+            border-bottom: 1px solid #2ebb00 !important;
+        }
+
+        .select2-container {
+            .select2-selection--single {
+                border: 1px solid #2ebb00;
+
+                &:focus {
+                    border-color: #2ebb00;
+                }
+            }
+        }
+
+        .custom-file-label {
+            border-bottom: 1px solid #2ebb00 !important;
+        }
+    }
+
+    &.has-error{
+        label {
+            color: red;
+        }
+        .form-control {
+            border-bottom: 1px solid red !important;
+        }
+
+        .select2-container {
+            .select2-selection--single {
+                border: 1px solid red;
+
+                &:focus {
+                    border-color: red;
+                }
+            }
+        }
+
+        .custom-file-label {
+            border-bottom: 1px solid red !important;
+        }
+    }
+}
+
+.topbar {
+    .top-navbar {
+        .navbar-header {
+            background: rgb(239 165 160);
+        }
+    }
+
+    .dropdown-menu {
+        .dropdown-item {
+            padding: 7px 6px;
+
+            .icon-lang {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+.skin-default-dark .topbar {
+    background: #007a5c;
+}
+
+.el-element-overlay {
+    .el-card-item {
+        .el-overlay-1 {
+            .profile-image {
+                width: 106px;
+                height: 106px;
+            }
+        }
+    }
+}
